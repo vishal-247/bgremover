@@ -1,6 +1,8 @@
 import cv2
 import os
 from rembg import remove
+
+import onnxruntime as ort
 from PIL import Image
 from werkzeug.utils import secure_filename
 from flask import Flask,request,render_template
